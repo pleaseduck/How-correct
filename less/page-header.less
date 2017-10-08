@@ -1,0 +1,133 @@
+.page-header {
+  background-color: #516ec4;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  width: 100%;
+}
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.page-header__logo {
+  width: 225px;
+  display: inline-block;
+}
+.main-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  max-width: 630px;
+  width: 47%;
+}
+.main-nav__item {
+ font-size: 20px;
+ padding: 15px 20px;
+ &:hover {
+  background-color: #42599e;
+ }
+}
+.main-nav__item.active {
+   background-color: #42599e;
+}
+.main-nav__item a {
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width:1070px) {
+ .page-header .container {
+   flex-direction: column;
+   margin-left: 0;
+   margin-right: 0;
+ }
+ .main-nav {
+   display: none;
+   width: 100%;
+   max-width: 100%;
+   &--opened {
+     display: block;
+   }
+ }
+ .main-nav__item {
+   display: block;
+   padding: 25px 30px;
+   border-bottom: 1px solid #fff;
+   &:first-child {
+     border-top: 1px solid #fff;
+   }
+ }
+ .page-header .status {
+   width: 100%;
+   text-align: right;
+   padding-right: 30px;
+   padding-top: 15px;
+   padding-bottom: 10px;
+ }
+ .page-header__logo {
+   margin-bottom: 15px;
+   padding-top: 15px;
+ }
+ .hamburger-wrapper {
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   right: 0;
+   top: 25px;
+ }
+ .hamburger {
+   display: inline-block;
+   width: 30px;
+   height: 5px;
+   border-radius: 3px;
+   background-color: #fff;
+   position: relative;
+   top: -12px;
+   &:before {
+     content: " ";
+     width: 30px;
+     height: 5px;
+     border-radius: 3px;
+     background-color: #fff;
+     position: absolute;
+     top: 10px;
+   }
+   &:after {
+     content: " ";
+     width: 30px;
+     height: 5px;
+     border-radius: 3px;
+     background-color: #fff;
+     position: absolute;
+     top: 20px;
+   }
+ }
+ .menu-closer {
+   display: inline-block;
+   position: relative;
+   top: -11px;
+   &:before {
+     content: " ";
+     width: 30px;
+     height: 5px;
+     border-radius: 3px;
+     background-color: #fff;
+     position: absolute;
+     top: 6px;
+     transform: rotate(45deg);
+   }
+   &:after {
+     content: " ";
+     width: 30px;
+     height: 5px;
+     border-radius: 3px;
+     background-color: #fff;
+     position: absolute;
+     top: 6px;
+     transform: rotate(-45deg);
+   }
+ }
+}

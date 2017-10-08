@@ -1,0 +1,87 @@
+
+.main-content .container {
+  padding: 40px 49px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-content__card-wrapper {
+  display: inline-block;
+  text-decoration: none;
+  color: #222222;
+}
+.main-content__card {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  width: 385px;
+  height: 450px;
+  box-sizing: border-box;
+  padding: 16.5px 20px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #fff;
+  background-position: -5px 196px;
+  border: 1px solid #e3e5e9;
+  border-radius: 11px;
+  margin-bottom: 30px;
+  &--oge {
+    background-image: url(../img/icon-oge.png);
+  }
+  &--ege {
+      background-image: url(../img/icon-ege.png);
+  }
+  &--spelling {
+    background-image: url(../img/icon-spelling.png);
+  }
+  &--punctuation {
+    background-image: url(../img/icon-punctuation.png);
+  }
+  &--vk-spelling {
+    color: #fff;
+    background-color: #516ec4;
+    background-image: url(../img/icon-vk-spelling.png);
+  }
+  &--yt-spelling {
+    color: #fff;
+    background-color: #fa201f;
+    background-image: url(../img/icon-yt-spelling.png);
+  }
+}
+.main-content__card-wrapper:nth-of-type(3n) .main-content__card  {
+  margin-right: 0;
+}
+.main-content__card h2 {
+  text-align: center;
+  font-weight: lighter;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 10px;
+  line-height: 42px;
+}
+.main-content__card--vk-spelling h2,
+.main-content__card--yt-spelling h2 {
+  margin-bottom: 5px;
+}
+.main-content__card p {
+  margin: 0;
+  text-align: left;
+  font-size: 17px;
+}
+.main-content__card__icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 310px;
+  height: 118px;
+}
+.main-content__card--vk-spelling .status,
+.main-content__card--yt-spelling .status {
+  width: 100%;
+  text-align: center;
+}
+@media (max-width:1280px) {
+  .main-content .container {
+    justify-content: space-around;
+  }
+}
