@@ -25,7 +25,6 @@
 }
 .main-nav__item {
   font-size: 20px;
-  padding: 15px 20px;
 }
 .main-nav__item:hover {
   background-color: #42599e;
@@ -34,6 +33,9 @@
   background-color: #42599e;
 }
 .main-nav__item a {
+  display: block;
+  padding: 15px 20px;
+  box-sizing: border-box;
   color: #fff;
   text-decoration: none;
 }
@@ -147,6 +149,7 @@ body {
   font-weight: lighter;
   color: #fff;
   font-size: 16px;
+  width: 100%;
 }
 .main-footer .container {
   padding: 15px 50px;
@@ -223,7 +226,7 @@ body {
     height: 30px;
     position: absolute;
     right: 0;
-    top: 25px;
+    top: 22px;
   }
   .hamburger {
     display: inline-block;
@@ -289,6 +292,15 @@ body {
     justify-content: space-around;
   }
 }
+@media (max-width: 450px) {
+  .main-content__card {
+    width: 95%;
+  }
+  .main-content__card.main-content__card--vk-spelling p,
+  .main-content__card.main-content__card--yt-spelling p {
+    text-shadow: 0 0 2px  #000;
+  }
+}
 @media (max-width: 1250px) {
   .copyright span {
     display: inline-block;
@@ -319,23 +331,47 @@ body {
   }
 }
 @media (max-width: 700px) {
-  .main-footer .copyright span.location {
-    font-size: 0;
-    margin-right: 0;
-  }
   .main-footer .container {
     padding: 15px 0px;
+    display: block;
+    padding-bottom: 0;
   }
-  .location:hover + .location-tooltip {
-    display: block !important;
+  .main-footer .copyright {
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
   }
-  .location-tooltip {
-    position: absolute;
-    top: -68px;
-    left: 40px;
-    border: 1px solid #000;
-    border-radius: 12px;
-    color: black;
-    padding: 3px;
+  .main-footer .copyright span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+  .main-footer .copyright span.icon-heart {
+    display: inline-block;
+    border-bottom: none;
+  }
+  .main-footer__links {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-footer__link {
+    font-size: 16px;
+    background-image: none;
+  }
+}
+@media (max-width: 420px) {
+  .main-footer__link {
+    font-size: 0;
+    background-image: none;
+  }
+  .main-footer__link--vk {
+    background-image: url(../img/icon-vk.svg);
+  }
+  .main-footer__link--info {
+    background-image: url(../img/icon-info.svg);
   }
 }
