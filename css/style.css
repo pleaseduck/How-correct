@@ -216,6 +216,9 @@ body {
     text-align: right;
     padding-top: 40px;
   }
+  .page-header .status:hover {
+    background-color: #42599e;
+  }
   .page-header .status img {
     display: inline-block;
   }
@@ -338,6 +341,7 @@ body {
     padding: 15px 0px;
     display: block;
     padding-bottom: 0;
+    padding-top: 5px;
   }
   .main-footer .copyright {
     display: block;
@@ -355,6 +359,7 @@ body {
   .main-footer .copyright span.icon-heart {
     display: inline-block;
     border-bottom: none;
+    top: 18px;
   }
   .main-footer__links {
     padding-top: 5px;
@@ -376,5 +381,11 @@ body {
   }
   .main-footer__link--info {
     background-image: url(../img/icon-info.svg);
+  }
+  .main-footer__link--info {
+    margin-top: 5px;
+  }
+  .main-footer__link--vk {
+    margin-top: 5px;
   }
 }
