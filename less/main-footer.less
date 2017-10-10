@@ -22,6 +22,11 @@
   display: inline-block;
   margin-right: 45px;
 }
+.main-footer .copyright .company-name span {
+  display: inline-block !important;
+  margin-right: 0;
+  margin-left: 35px;
+}
 .main-footer .copyright span.icon-heart {
   margin-right: 0;
   width: 17px;
@@ -49,6 +54,9 @@
   }
   .main-footer .copyright span {
     margin-right: 25px;
+  }
+  .main-footer .copyright .company-name span {
+    margin-left: 10px;
   }
    .main-footer__links {
      position: relative;
@@ -87,14 +95,16 @@
   display: block;
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 10px;
   padding-top: 5px;
+}
+.main-footer .copyright .company-name span {
+  display: inline-block !important;
+  width: auto !important;
 }
 .main-footer .copyright span.icon-heart {
   display: inline-block;
   border-bottom: none;
-  top: 18px;
+  top: 10px;
 }
 .main-footer__links {
 padding-top: 5px;
@@ -108,7 +118,7 @@ justify-content: space-between;
 }
 @media (max-width:420px) {
   .main-footer__link {
-    font-size: 0;
+    font-size: 0 !important;
     background-image: none;
     &--vk {
         background-image: url(../img/icon-vk.svg);
